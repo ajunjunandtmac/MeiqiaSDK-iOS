@@ -756,16 +756,18 @@ static CGFloat const kMQChatViewInputBarHeight = 80.0;
     if ([MQChatViewConfig sharedConfig].navTitleText) {
         return;
     }
+
+    NSString *agentNameFixed = @"永远都是这个";
     UIView *titleView = [UIView new];
     UILabel *titleLabel = [UILabel new];
-    titleLabel.text = agentName;
+    titleLabel.text = agentNameFixed;
     
     UIFont *font = [MQChatViewConfig sharedConfig].chatViewStyle.navTitleFont ?: [[UINavigationBar appearance].titleTextAttributes objectForKey:NSFontAttributeName] ?: [UIFont systemFontOfSize:16.0];
     UIColor *color = [MQChatViewConfig sharedConfig].navTitleColor ?: [[UINavigationBar appearance].titleTextAttributes objectForKey:NSForegroundColorAttributeName];
     titleLabel.font = font;
     titleLabel.textColor = color;
-    CGFloat titleHeight = [MQStringSizeUtil getHeightForText:agentName withFont:titleLabel.font andWidth:self.view.frame.size.width];
-    CGFloat titleWidth = [MQStringSizeUtil getWidthForText:agentName withFont:titleLabel.font andHeight:titleHeight];
+    CGFloat titleHeight = [MQStringSizeUtil getHeightForText:agentNameFixed withFont:titleLabel.font andWidth:self.view.frame.size.width];
+    CGFloat titleWidth = [MQStringSizeUtil getWidthForText:agentNameFixed withFont:titleLabel.font andHeight:titleHeight];
     UIImageView *statusImageView = [UIImageView new];
     switch (agentStatus) {
         case MQChatAgentStatusOnDuty:
