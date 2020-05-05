@@ -33,7 +33,10 @@
 }
 
 - (MBPresendProdInfoCell *)getCellWithReuseIdentifier:(NSString *)cellReuseIdentifer {
-    MBPresendProdInfoCell *cell = (MBPresendProdInfoCell *)[[NSBundle mainBundle] loadNibNamed: NSStringFromClass([MBPresendProdInfoCell class]) owner: nil options:nil].lastObject;
+    NSBundle *bundle = [NSBundle bundleForClass: [self class]];
+    NSURL *url = [bundle URLForResource:@"MQChatViewAsset" withExtension:@"bundle"];
+    NSBundle *resourceBundle = [NSBundle bundleWithURL:url];
+    MBPresendProdInfoCell *cell = [[resourceBundle loadNibNamed:@"MBPresendProdInfoCell" owner:nil options:nil] lastObject];
     return cell;
 }
 

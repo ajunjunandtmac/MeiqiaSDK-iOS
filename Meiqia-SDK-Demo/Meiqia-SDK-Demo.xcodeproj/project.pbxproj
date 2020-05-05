@@ -153,7 +153,6 @@
 		89B554A01FE75E8100EAC49D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5549F1FE75E8100EAC49D /* ViewController.m */; };
 		B0C39DDA245EA4440062C559 /* MBPresendProdInfoCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C39DD9245EA4440062C559 /* MBPresendProdInfoCellModel.m */; };
 		B0C39DDE245EA64E0062C559 /* MBPresendProdInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C39DDC245EA64E0062C559 /* MBPresendProdInfoCell.m */; };
-		B0C39DDF245EA64E0062C559 /* MBPresendProdInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C39DDD245EA64E0062C559 /* MBPresendProdInfoCell.xib */; };
 		B0FFDC50245E991200C0D633 /* MBPresendProdInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFDC4F245E991200C0D633 /* MBPresendProdInfoMessage.m */; };
 		CCE9D10B1C1812F6004E862E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9D10A1C1812F6004E862E /* main.m */; };
 		CCE9D10E1C1812F6004E862E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9D10D1C1812F6004E862E /* AppDelegate.m */; };
@@ -512,7 +511,6 @@
 		B0C39DD9245EA4440062C559 /* MBPresendProdInfoCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBPresendProdInfoCellModel.m; sourceTree = "<group>"; };
 		B0C39DDB245EA64E0062C559 /* MBPresendProdInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPresendProdInfoCell.h; sourceTree = "<group>"; };
 		B0C39DDC245EA64E0062C559 /* MBPresendProdInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBPresendProdInfoCell.m; sourceTree = "<group>"; };
-		B0C39DDD245EA64E0062C559 /* MBPresendProdInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBPresendProdInfoCell.xib; sourceTree = "<group>"; };
 		B0FFDC4E245E991200C0D633 /* MBPresendProdInfoMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPresendProdInfoMessage.h; sourceTree = "<group>"; };
 		B0FFDC4F245E991200C0D633 /* MBPresendProdInfoMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBPresendProdInfoMessage.m; sourceTree = "<group>"; };
 		CCE9D1061C1812F6004E862E /* Meiqia-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meiqia-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1091,7 +1089,6 @@
 				8964BBCC204EAA8900EB9473 /* MQBotMenuWebViewBubbleAnswerCell.m */,
 				B0C39DDB245EA64E0062C559 /* MBPresendProdInfoCell.h */,
 				B0C39DDC245EA64E0062C559 /* MBPresendProdInfoCell.m */,
-				B0C39DDD245EA64E0062C559 /* MBPresendProdInfoCell.xib */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -1578,7 +1575,6 @@
 				CCE9D1191C1812F6004E862E /* LaunchScreen.storyboard in Resources */,
 				CCE9D1161C1812F6004E862E /* Assets.xcassets in Resources */,
 				8964BCDB204EAA8A00EB9473 /* MQChatViewAsset.bundle in Resources */,
-				B0C39DDF245EA64E0062C559 /* MBPresendProdInfoCell.xib in Resources */,
 				E40C2C7B1D2B710300744577 /* testdata.txt in Resources */,
 				CCE9D1141C1812F6004E862E /* Main.storyboard in Resources */,
 			);
