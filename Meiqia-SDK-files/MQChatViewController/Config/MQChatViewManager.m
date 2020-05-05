@@ -541,3 +541,16 @@
 }
 
 @end
+
+
+@implementation MQChatViewManager(MBCustomized)
+@dynamic shouldShowPresentProdInfoMessage;
+@dynamic presendProdInfoDict;
+- (void)setShouldShowPresentProdInfoMessage:(BOOL)shouldShowPresentProdInfoMessage {
+    chatViewConfig.shouldShowPresentProdInfoMessage = shouldShowPresentProdInfoMessage;
+}
+
+- (void)setPresendProdInfoDict:(NSDictionary *)presendProdInfoDict {
+    chatViewConfig.presendProdInfoDict = presendProdInfoDict;
+}
+@end

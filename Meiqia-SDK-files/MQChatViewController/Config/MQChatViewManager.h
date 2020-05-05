@@ -483,3 +483,9 @@
 
 
 @end
+
+
+@interface MQChatViewManager(MBCustomized)
+@property(nonatomic, assign)BOOL shouldShowPresentProdInfoMessage;
+@property(nonatomic,strong)NSDictionary *presendProdInfoDict;
+@end

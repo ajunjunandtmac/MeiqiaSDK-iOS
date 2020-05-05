@@ -53,7 +53,7 @@ static CGFloat const kMQButtonToBottomSpacing   = 128.0;
     
 #pragma mark  最简单的集成方法: 全部使用meiqia的,  不做任何自定义UI.
     MQChatViewManager *chatViewManager = [[MQChatViewManager alloc] init];
-    [chatViewManager pushMQChatViewControllerInViewController:self];
+    
 //
 #pragma mark  觉得返回按钮系统的太丑 想自定义 采用下面的方法
 //    MQChatViewManager *chatViewManager = [[MQChatViewManager alloc] init];
@@ -98,6 +98,13 @@ static CGFloat const kMQButtonToBottomSpacing   = 128.0;
 //        //[chatViewManager setLoginCustomizedId:@"notadda"];
 //    }
 //    [chatViewManager pushMQChatViewControllerInViewController:self];
+    chatViewManager.shouldShowPresentProdInfoMessage = YES;
+    NSMutableDictionary *prodDict = @{}.mutableCopy;
+    prodDict[@"content"] = @"测试测试这是商品商品商品";
+    prodDict[@"prodPrice"] = @"118";
+    prodDict[@"thumbnail"] = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674969104&di=571cc58069dc6bb0bb3fb54f66d8fcbb&imgtype=0&src=http%3A%2F%2Fimage.it168.com%2Fn%2F640x480%2F3%2F3530%2F3530861.jpg";
+    chatViewManager.presendProdInfoDict = prodDict;
+    [chatViewManager pushMQChatViewControllerInViewController:self];
 #pragma mark 留言模式 适用于 刚起步,人工客服成本没有,只能留言.
 //    [self feedback];
 }

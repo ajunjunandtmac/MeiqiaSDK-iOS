@@ -40,6 +40,8 @@
 #import "NSError+MQConvenient.h"
 
 #import "MQBotMenuWebViewBubbleAnswerCellModel.h"
+#import "MBPresendProdInfoCellModel.h"
+#import "MBPresendProdInfoMessage.h"
 
 static NSInteger const kMQChatMessageMaxTimeInterval = 60;
 
@@ -1373,5 +1375,13 @@ static NSInteger const kMQChatGetHistoryMessageNumber = 20;
 }
 #endif
 
+- (void)showProdInfoPresendMessage {
+    if (_presendProdInfoDict == nil) {
+        return;
+    }
+    MBPresendProdInfoMessage *message = [[MBPresendProdInfoMessage alloc] initWithDictionary: _presendProdInfoDict];
+    MBPresendProdInfoCellModel *presendModel = [[MBPresendProdInfoCellModel alloc] initCellModelWithMessage: message cellWidth: self.chatViewWidth delegate:self];
+    [self addCellModelAndReloadTableViewWithModel:presendModel];
+}
 
 @end

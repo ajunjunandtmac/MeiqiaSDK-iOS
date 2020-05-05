@@ -151,6 +151,10 @@
 		8964BCE2204EAA8A00EB9473 /* UIViewController+MQOrientationFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964BC53204EAA8A00EB9473 /* UIViewController+MQOrientationFix.m */; };
 		8964BCE3204EAA8A00EB9473 /* UIViewController+MQHieriachy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8964BC54204EAA8A00EB9473 /* UIViewController+MQHieriachy.m */; };
 		89B554A01FE75E8100EAC49D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5549F1FE75E8100EAC49D /* ViewController.m */; };
+		B0C39DDA245EA4440062C559 /* MBPresendProdInfoCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C39DD9245EA4440062C559 /* MBPresendProdInfoCellModel.m */; };
+		B0C39DDE245EA64E0062C559 /* MBPresendProdInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C39DDC245EA64E0062C559 /* MBPresendProdInfoCell.m */; };
+		B0C39DDF245EA64E0062C559 /* MBPresendProdInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C39DDD245EA64E0062C559 /* MBPresendProdInfoCell.xib */; };
+		B0FFDC50245E991200C0D633 /* MBPresendProdInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFDC4F245E991200C0D633 /* MBPresendProdInfoMessage.m */; };
 		CCE9D10B1C1812F6004E862E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9D10A1C1812F6004E862E /* main.m */; };
 		CCE9D10E1C1812F6004E862E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9D10D1C1812F6004E862E /* AppDelegate.m */; };
 		CCE9D1141C1812F6004E862E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE9D1121C1812F6004E862E /* Main.storyboard */; };
@@ -504,6 +508,13 @@
 		8964BC54204EAA8A00EB9473 /* UIViewController+MQHieriachy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MQHieriachy.m"; sourceTree = "<group>"; };
 		89B5549E1FE75E8100EAC49D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		89B5549F1FE75E8100EAC49D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B0C39DD8245EA4440062C559 /* MBPresendProdInfoCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPresendProdInfoCellModel.h; sourceTree = "<group>"; };
+		B0C39DD9245EA4440062C559 /* MBPresendProdInfoCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBPresendProdInfoCellModel.m; sourceTree = "<group>"; };
+		B0C39DDB245EA64E0062C559 /* MBPresendProdInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPresendProdInfoCell.h; sourceTree = "<group>"; };
+		B0C39DDC245EA64E0062C559 /* MBPresendProdInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBPresendProdInfoCell.m; sourceTree = "<group>"; };
+		B0C39DDD245EA64E0062C559 /* MBPresendProdInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBPresendProdInfoCell.xib; sourceTree = "<group>"; };
+		B0FFDC4E245E991200C0D633 /* MBPresendProdInfoMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBPresendProdInfoMessage.h; sourceTree = "<group>"; };
+		B0FFDC4F245E991200C0D633 /* MBPresendProdInfoMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBPresendProdInfoMessage.m; sourceTree = "<group>"; };
 		CCE9D1061C1812F6004E862E /* Meiqia-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meiqia-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE9D10A1C1812F6004E862E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCE9D10C1C1812F6004E862E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -986,6 +997,8 @@
 				8964BB87204EAA8900EB9473 /* MQBotRichTextMessage.m */,
 				8964BB80204EAA8900EB9473 /* MQBotAnswerMessage.h */,
 				8964BB8E204EAA8900EB9473 /* MQBotAnswerMessage.m */,
+				B0FFDC4E245E991200C0D633 /* MBPresendProdInfoMessage.h */,
+				B0FFDC4F245E991200C0D633 /* MBPresendProdInfoMessage.m */,
 			);
 			path = MessageModels;
 			sourceTree = "<group>";
@@ -1033,6 +1046,8 @@
 				8964BBB1204EAA8900EB9473 /* MQBotWebViewBubbleAnswerCellModel.m */,
 				8964BB9D204EAA8900EB9473 /* MQBotMenuWebViewBubbleAnswerCellModel.h */,
 				8964BBAF204EAA8900EB9473 /* MQBotMenuWebViewBubbleAnswerCellModel.m */,
+				B0C39DD8245EA4440062C559 /* MBPresendProdInfoCellModel.h */,
+				B0C39DD9245EA4440062C559 /* MBPresendProdInfoCellModel.m */,
 			);
 			path = CellModel;
 			sourceTree = "<group>";
@@ -1074,6 +1089,9 @@
 				8964BBD7204EAA8900EB9473 /* MQBotWebViewBubbleAnswerCell.m */,
 				8964BBDC204EAA8900EB9473 /* MQBotMenuWebViewBubbleAnswerCell.h */,
 				8964BBCC204EAA8900EB9473 /* MQBotMenuWebViewBubbleAnswerCell.m */,
+				B0C39DDB245EA64E0062C559 /* MBPresendProdInfoCell.h */,
+				B0C39DDC245EA64E0062C559 /* MBPresendProdInfoCell.m */,
+				B0C39DDD245EA64E0062C559 /* MBPresendProdInfoCell.xib */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -1560,6 +1578,7 @@
 				CCE9D1191C1812F6004E862E /* LaunchScreen.storyboard in Resources */,
 				CCE9D1161C1812F6004E862E /* Assets.xcassets in Resources */,
 				8964BCDB204EAA8A00EB9473 /* MQChatViewAsset.bundle in Resources */,
+				B0C39DDF245EA64E0062C559 /* MBPresendProdInfoCell.xib in Resources */,
 				E40C2C7B1D2B710300744577 /* testdata.txt in Resources */,
 				CCE9D1141C1812F6004E862E /* Main.storyboard in Resources */,
 			);
@@ -1598,6 +1617,7 @@
 				8964BCAD204EAA8A00EB9473 /* MQWebViewBubbleCell.m in Sources */,
 				8964BC8F204EAA8A00EB9473 /* MQBaseMessage.m in Sources */,
 				8964BCA8204EAA8A00EB9473 /* MQChatBaseCell.m in Sources */,
+				B0C39DDE245EA64E0062C559 /* MBPresendProdInfoCell.m in Sources */,
 				8964BCD1204EAA8A00EB9473 /* MQImageViewerViewController.m in Sources */,
 				8964BC72204EAA8A00EB9473 /* MEIQIA_CafRecordWriter.m in Sources */,
 				8964BCA6204EAA8A00EB9473 /* MQEvaluationResultCell.m in Sources */,
@@ -1654,6 +1674,7 @@
 				8964BC77204EAA8A00EB9473 /* MEIQIA_FBSquareFont.m in Sources */,
 				8964BC67204EAA8A00EB9473 /* MQAGEmojiKeyBoardView.m in Sources */,
 				8964BC95204EAA8A00EB9473 /* MQBotMenuAnswerCellModel.m in Sources */,
+				B0C39DDA245EA4440062C559 /* MBPresendProdInfoCellModel.m in Sources */,
 				8964BCB1204EAA8A00EB9473 /* MQBotMenuAnswerCell.m in Sources */,
 				8964BCD6204EAA8A00EB9473 /* MQTabInputContentView.m in Sources */,
 				8964BC97204EAA8A00EB9473 /* MQImageCellModel.m in Sources */,
@@ -1716,6 +1737,7 @@
 				8964BCAB204EAA8A00EB9473 /* MQRichTextViewCell.m in Sources */,
 				8964BCCA204EAA8A00EB9473 /* MQChatViewTableDataSource.m in Sources */,
 				8964BCCB204EAA8A00EB9473 /* MQChatViewService.m in Sources */,
+				B0FFDC50245E991200C0D633 /* MBPresendProdInfoMessage.m in Sources */,
 				8964BC92204EAA8A00EB9473 /* MQVoiceCellModel.m in Sources */,
 				8964BC60204EAA8A00EB9473 /* MQMessageFormCategoryViewController.m in Sources */,
 				8964BC76204EAA8A00EB9473 /* MEIQIA_FBBitmapFontView.m in Sources */,
@@ -1928,7 +1950,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "Meiqia-SDK-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1970,7 +1992,7 @@
 					"$(PROJECT_DIR)/MeiqiaSDK",
 				);
 				INFOPLIST_FILE = "Meiqia-SDK-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

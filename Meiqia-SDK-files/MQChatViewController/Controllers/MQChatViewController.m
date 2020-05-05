@@ -204,6 +204,12 @@ static CGFloat const kMQChatViewInputBarHeight = 80.0;
                 openVisitorNoMessageBool = NO;
                 [self.chatViewService setClientOnline];
             }
+            
+            // 加载presendProdInfo
+            if (chatViewConfig.shouldShowPresentProdInfoMessage) {
+                [_chatViewService showProdInfoPresendMessage];
+            }
+
         }];
     } cancle:^{
         //讯前表单 左返回按钮
@@ -284,6 +290,9 @@ static CGFloat const kMQChatViewInputBarHeight = 80.0;
 #pragma 初始化viewModel
 - (void)initchatViewService {
     self.chatViewService = [[MQChatViewService alloc] initWithDelegate:self errorDelegate:self];
+    if (chatViewConfig.shouldShowPresentProdInfoMessage) {
+        _chatViewService.presendProdInfoDict = chatViewConfig.presendProdInfoDict;
+    }
 }
 
 #pragma 初始化tableView dataSource
@@ -757,17 +766,16 @@ static CGFloat const kMQChatViewInputBarHeight = 80.0;
         return;
     }
 
-    NSString *agentNameFixed = @"永远都是这个";
     UIView *titleView = [UIView new];
     UILabel *titleLabel = [UILabel new];
-    titleLabel.text = agentNameFixed;
+    titleLabel.text = agentName;
     
     UIFont *font = [MQChatViewConfig sharedConfig].chatViewStyle.navTitleFont ?: [[UINavigationBar appearance].titleTextAttributes objectForKey:NSFontAttributeName] ?: [UIFont systemFontOfSize:16.0];
     UIColor *color = [MQChatViewConfig sharedConfig].navTitleColor ?: [[UINavigationBar appearance].titleTextAttributes objectForKey:NSForegroundColorAttributeName];
     titleLabel.font = font;
     titleLabel.textColor = color;
-    CGFloat titleHeight = [MQStringSizeUtil getHeightForText:agentNameFixed withFont:titleLabel.font andWidth:self.view.frame.size.width];
-    CGFloat titleWidth = [MQStringSizeUtil getWidthForText:agentNameFixed withFont:titleLabel.font andHeight:titleHeight];
+    CGFloat titleHeight = [MQStringSizeUtil getHeightForText:agentName withFont:titleLabel.font andWidth:self.view.frame.size.width];
+    CGFloat titleWidth = [MQStringSizeUtil getWidthForText:agentName withFont:titleLabel.font andHeight:titleHeight];
     UIImageView *statusImageView = [UIImageView new];
     switch (agentStatus) {
         case MQChatAgentStatusOnDuty:

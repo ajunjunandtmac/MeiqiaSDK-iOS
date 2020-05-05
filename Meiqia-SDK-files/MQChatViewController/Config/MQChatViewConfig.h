@@ -123,6 +123,9 @@ typedef NS_ENUM(NSUInteger, MQTransiteAnimationType) {
 /** 将配置设置为默认值 */
 - (void)setConfigToDefault;
 
+@property(nonatomic, assign)BOOL shouldShowPresentProdInfoMessage;
+@property(nonatomic,strong)NSDictionary *presendProdInfoDict;
+
 @end
 
 
@@ -170,4 +173,3 @@ typedef NS_ENUM(NSUInteger, MQTransiteAnimationType) {
 
 
 @end
-

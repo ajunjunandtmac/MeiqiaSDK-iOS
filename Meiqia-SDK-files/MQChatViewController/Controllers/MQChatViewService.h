@@ -237,4 +237,6 @@
 
 #endif
 
+@property(nonatomic,strong)NSDictionary *presendProdInfoDict;
+- (void)showProdInfoPresendMessage;
 @end
