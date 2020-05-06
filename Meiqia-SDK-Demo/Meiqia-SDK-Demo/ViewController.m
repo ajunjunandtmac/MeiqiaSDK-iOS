@@ -104,7 +104,12 @@ static CGFloat const kMQButtonToBottomSpacing   = 128.0;
     prodDict[@"prodPrice"] = @"118";
     prodDict[@"thumbnail"] = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588674969104&di=571cc58069dc6bb0bb3fb54f66d8fcbb&imgtype=0&src=http%3A%2F%2Fimage.it168.com%2Fn%2F640x480%2F3%2F3530%2F3530861.jpg";
     chatViewManager.presendProdInfoDict = prodDict;
+    
+    MQChatViewStyle *chatViewStyle = [chatViewManager chatViewStyle];
+    [chatViewStyle setIncomingBubbleColor:[UIColor whiteColor]];
+    [chatViewStyle setBackgroundColor: [UIColor lightGrayColor]];
     [chatViewManager pushMQChatViewControllerInViewController:self];
+    
 #pragma mark 留言模式 适用于 刚起步,人工客服成本没有,只能留言.
 //    [self feedback];
 }

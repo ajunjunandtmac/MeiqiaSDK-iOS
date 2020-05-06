@@ -29,7 +29,7 @@
 }
 
 - (CGFloat)getCellHeight {
-    return 120;
+    return 130;
 }
 
 - (MBPresendProdInfoCell *)getCellWithReuseIdentifier:(NSString *)cellReuseIdentifer {

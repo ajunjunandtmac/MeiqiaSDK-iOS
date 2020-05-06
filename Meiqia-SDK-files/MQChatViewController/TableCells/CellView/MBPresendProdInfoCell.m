@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UIButton *sendButton;
 @property (nonatomic, strong) MBPresendProdInfoCellModel *cellModel;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *bgView;
 @end
 
 @implementation MBPresendProdInfoCell
@@ -25,6 +26,10 @@
     _prodIntroLabel.textColor = [UIColor blackColor];
     _priceUnitSymbol.textColor = [UIColor redColor];
     _priceLabel.textColor = _priceUnitSymbol.textColor;
+    _bgView.clipsToBounds = YES;
+    _bgView.layer.cornerRadius = 8.0;
+    self.contentView.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
